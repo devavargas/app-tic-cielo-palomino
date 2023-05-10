@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" type="text/css" href="/css/contacto.style.css" />
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="/js/utils.js"></script>
+</head>
+<body>
+  
+<div id="menu" >
+  <ul>
+    <div >
+      <li><a href="/index.html">Inicio</a></li>
+      <li><a href="trailers.html">Trailers</a></li>
+      <li><a href="datos.html">Datos</a></li>
+      <li><a href="personajes.html">Personajes</a></li>
+      <li><a href="curiosidades.html">Curiosidades</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </div>
+  </ul>
+</div>
+
+<div style="margin-top: 50px;">
+
+  <div class="main-block">
+    <h1>Observaciones</h1>
+    <form>
+      <hr>
+      <input type="text" name="name" id="subject" placeholder="Nombre"/>
+      <input type="email" name="email" id="emailFrom" placeholder="Email" value="apalruf0505@g.educaand.es"/>
+      <textarea name="observaciones" id="body" cols="30" rows="10" placeholder="Observaciones"></textarea>
+      <hr>
+      <div class="btn-block">
+        <button onclick="sendEmail(event)">Enviar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
